@@ -22,7 +22,7 @@ then need to have 'Three' SingleTracker object.
 class SingleTracker
 {
 private:
-	int			target_id;			// Unique Number for target
+	int		target_id;			// Unique Number for target
 	double		confidence;			// Confidence of tracker
 	cv::Rect	rect;				// Initial Rectangle for target
 	cv::Point	center;				// Current center point of target
@@ -54,7 +54,7 @@ public:
 	}
 
 	/* Get Function */
-	int			getTargetID() { return this->target_id; }
+	int		getTargetID() { return this->target_id; }
 	cv::Rect	getRect() { return this->rect; }
 	cv::Point	getCenter() { return this->center; }
 	double		getConfidence() { return this->confidence; }
@@ -129,15 +129,15 @@ TrackingSystem is using these classes properly and hadling all expected exceptio
 class TrackingSystem
 {
 private:
-	std::string		frame_path;		// Path to the frame image
-	int				frame_width;	// Frame image width
-	int				frame_height;	// Frame image height
+	std::string		frame_path;	// Path to the frame image
+	int			frame_width;	// Frame image width
+	int			frame_height;	// Frame image height
 	cv::Mat			current_frame;	// Current frame
 	std::vector<std::pair<cv::Rect, cv::Scalar>> init_target;
 
 	TargetRectDrawer	drawer;		// TargetRectDrawer
 	TrackerManager		manager;	// TrackerManager
-	FrameReader			reader;		// FrameReader
+	FrameReader		reader;		// FrameReader
 
 public:
 	/* Constructor */
