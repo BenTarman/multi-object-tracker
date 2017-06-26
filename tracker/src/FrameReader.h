@@ -32,7 +32,7 @@ private:
 	std::string		image_type;		// Image type (For now, just "jpg" is available)
 	_finddata_t		fd;
 	intptr_t		handle;
-	int				status;			// Reading status (CANNOT_OPEN_DIR = 3 / WAITING_FOR_READING_FRAME = 4 / READING_FRAME_STARTED = 5 / READING_FRAME_DONE = 6)
+	int			status;			// Reading status (CANNOT_OPEN_DIR = 3 / WAITING_FOR_READING_FRAME = 4 / READING_FRAME_STARTED = 5 / READING_FRAME_DONE = 6)
 
 public:
 
@@ -48,8 +48,8 @@ public:
 	std::string getPath() { return this->path; }
 	std::string getImageType() { return this->image_type; }
 	_finddata_t getFileFinder() { return this->fd; }
-	intptr_t	getHandler() { return this->handle; }
-	int			getStatus() { return this->status; }
+	intptr_t getHandler() { return this->handle; }
+	int getStatus() { return this->status; }
 
 	/* Core Function */
 	// Intialize FrameReader object
