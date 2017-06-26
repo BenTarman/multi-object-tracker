@@ -7,6 +7,16 @@ Multiple objects tracker using openCV and dlib
 * __dlib-19.3__  
 * __visual studio 15 (c+11 is necessary)__  
 
+# Directories
+__1. dlib-19.3__  
+dlib  
+  
+__2. tracker__  
+Source files and Visual Studio solution  
+  
+__3. video_frame__  
+Video frames
+
 # How to compile
 To run this program, you need to compile __opencv__ and __dlib__. You will be able to compile __opencv__ easily from many websites.
 The folliwing instruction is how to compile dlib given that you are done with opencv compiling clearly and using visual studio in window. If you have troubles in compiling dlib then you can just use __tracker/vs_solution/MultiObjectTracker.sln__ instead, but you need to change opencv and dlib path with your environment in the project property.  
